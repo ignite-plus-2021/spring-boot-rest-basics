@@ -1,0 +1,8 @@
+NO,We won't be able to pull the data from Database if we use different names for our data members.
+It should be same as the colomn names of our table.
+We can not use different names in the data member, as it throws an error "SQLSyntaxErrorException"
+
+
+example:- I tried "itemname" instead of "name" in my sql table. 
+	  output:
+	  java.sql.SQLSyntaxErrorException: Unknown column 'item0_.name' in 'field list'
