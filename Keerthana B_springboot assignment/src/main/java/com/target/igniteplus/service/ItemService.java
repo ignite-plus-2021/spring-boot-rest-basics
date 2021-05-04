@@ -23,7 +23,7 @@ public class ItemService {
 
     public String updateItemName(Item item) {
         if (itemRepository.updateItemName(item.getName(), item.getId()) == 1) {
-            return "Item has been updated successfully!";
+            return "Item has been updated successfully";
         } else {
             return "Something went wrong!";
         }
