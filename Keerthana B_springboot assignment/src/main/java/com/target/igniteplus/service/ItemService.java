@@ -23,7 +23,7 @@ public class ItemService {
 
     public String updateItemName(Item item) {
         if (itemRepository.updateItemName(item.getName(), item.getId()) == 1) {
-            return "Item Updated successfully!";
+            return "Item has been updated successfully!";
         } else {
             return "Something went wrong!";
         }
@@ -31,7 +31,7 @@ public class ItemService {
 
     public String addItem(Item item) {
         if (itemRepository.addItem(item.getId(), item.getName()) == 1) {
-            return "Item added successfully!";
+            return "Item has been added successfully";
         } else {
             return "Something went wrong";
         }
