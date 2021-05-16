@@ -1,0 +1,14 @@
+Yes, we can have different names in the data members than the columns of the Database.
+for that we'll make use of @Column annotation.
+For that the code of the Item.java class can be modified as:
+
+@Entity
+@Table(name = "ITEM")
+public class Employee {
+
+   @Column(name = "id")
+   private int item_id;
+
+   @Column(name = "name")
+   private String item_name;
+  }
