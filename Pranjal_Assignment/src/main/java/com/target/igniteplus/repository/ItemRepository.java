@@ -33,7 +33,7 @@ public class ItemRepository {
         return jdbcTemplate.update(query, name, id);
     }
 
-    // aad items in DB.
+    // add items in DB.
     public int additem(int id, String name) {
 
         String query = "INSERT INTO ITEM VALUES(?,?)";

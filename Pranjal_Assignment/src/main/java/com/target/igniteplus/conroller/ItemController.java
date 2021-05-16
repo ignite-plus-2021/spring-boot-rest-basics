@@ -22,28 +22,29 @@ public class ItemController {
 
     }
 
-    @GetMapping("/items/getname")
+    @GetMapping("/items/{id}")
     @ResponseBody
-    public List<Item> getItemName(@RequestBody int id){
-        return itemService.getItemName(id);
+    public String getItemName(@RequestBody Item item){
+        List<Item> x=itemService.getItemName(item.getId());
+        return x.get(0).getName();
 
     }
 
-    @PutMapping("/items/update")
+    @PutMapping("/items")
     @ResponseBody
     public String updateItemName(@RequestBody Item item){
         return itemService.updateItemName(item);
 
     }
 
-    @PostMapping("/items/additem")
+    @PostMapping("/items")
     @ResponseBody
     public String addItem(@RequestBody Item item){
        return itemService.addItem(item);
 
     }
 
-    @DeleteMapping("/items/delete")
+    @DeleteMapping("/items")
     @ResponseBody
     public String deleteItem(@RequestBody Item item){
         return itemService.deleteItem(item);
