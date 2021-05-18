@@ -1,0 +1,7 @@
+1. Create a GET endpoint by which I can pull the name of an Item providing the item id as input.
+2. Create a PUT endpoint by which I can update the name of a specific Item.
+3. Crate a DELETE endpoint by which I can delete an item.
+4. In this project, we have used the name of data members(id, name),same as the columns of the Database.
+   If I use different names in the data member( e.g: ItemName instead of name ), will I be able to pull the data from Database?
+       i. If yes, how?
+       i.If no, why ?
