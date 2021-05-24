@@ -1,0 +1,4 @@
+Q.4->
+Ans:
+Yes, we can use different names in the data members and we will still be able to pull data from the database.
+	  Its because, these name of the data member are just the reference to the actual names in database.
