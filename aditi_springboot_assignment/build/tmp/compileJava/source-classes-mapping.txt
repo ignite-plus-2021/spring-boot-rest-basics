@@ -1,0 +1,10 @@
+com/example/springboot_assignment/model/Item.java
+ com.example.springboot_assignment.model.Item
+com/example/springboot_assignment/repository/ItemRepository.java
+ com.example.springboot_assignment.repository.ItemRepository
+com/example/springboot_assignment/service/ItemService.java
+ com.example.springboot_assignment.service.ItemService
+com/example/springboot_assignment/SpringbootAssignmentApplication.java
+ com.example.springboot_assignment.SpringbootAssignmentApplication
+com/example/springboot_assignment/controller/ItemController.java
+ com.example.springboot_assignment.controller.ItemController

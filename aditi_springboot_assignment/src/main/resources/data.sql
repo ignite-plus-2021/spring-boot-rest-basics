@@ -1,0 +1,1 @@
+INSERT INTO ITEM VALUES (1, 'Smart-Watch');
