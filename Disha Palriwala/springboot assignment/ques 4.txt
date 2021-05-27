@@ -1,0 +1,3 @@
+answer.
+Yes we can use different names for the data members to pull the data from database by using the @Column annotation.
+@Column annotation is an optional annotation that enables you to customize the mapping between the entity attribute and the database column.
