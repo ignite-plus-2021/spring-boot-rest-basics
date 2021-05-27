@@ -1,0 +1,8 @@
+Q4. In this project, we have used the name of data members(id, name),same as the columns of the Database.
+   If I use different names in the data member( e.g: ItemName instead of name ), will I be able to pull the data from Database?
+       i. If yes, how?
+       i.If no, why ?
+
+Ans: Yes we can use different names for the data members to pull the data from database by using the @Column annotation.
+Its because, these name of the data members are just the reference to the actual names in database.
+@Column annotation is an optional annotation that enables you to customize the mapping between the entity attribute and the database column.
