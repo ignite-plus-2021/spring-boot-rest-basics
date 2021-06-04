@@ -1,6 +1,5 @@
 package com.target.ignitePlus.service;
 
-import ch.qos.logback.core.joran.spi.ElementSelector;
 import com.target.ignitePlus.model.ItemModel;
 import com.target.ignitePlus.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +20,9 @@ public class ItemService {
 
     public String addItem(ItemModel item) {
         if (itemRepository.addItem(item.getId(), item.getName()) == 1) {
-            return "Item added successfully!";
+            return "ITEM ADDED!";
         } else {
-            return "oops.....Something is wrong!";
+            return "Unable to add item!";
         }
     }
 
@@ -35,18 +34,18 @@ public class ItemService {
     public String updateItem(@RequestBody ItemModel item)
     {
         if(itemRepository.updateItem(item.getId(),item.getName())==1)
-            return "ITEM UPDATED SUCESSFULLY";
+            return "ITEM UPDATED!";
 
         else
-            return "oops.....Something is wrong!";
+            return "Unable to update item!";
     }
 
 
     public String deleteItem(ItemModel item) {
 
         if(itemRepository.deleteItem(item.getId())==1)
-            return "ITEM DELETED SUCESSFULLY";
+            return "ITEM DELETED!";
         else
-            return "oops.....Something is wrong!";
+            return "Unable to delete item!";
     }
 }
