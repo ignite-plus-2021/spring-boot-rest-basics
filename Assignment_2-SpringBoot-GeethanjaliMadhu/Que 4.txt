@@ -1,0 +1,1 @@
+No, we cannot pull data from a database by giving a name different to the corresponding coloumn name. The coloumn name would require to be updated for the same.
