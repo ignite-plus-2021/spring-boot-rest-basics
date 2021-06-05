@@ -1,0 +1,1 @@
+ No, we can't pull data from database by using different names for data members. We have to rename them in the database also, if we want to use them with a new name.
