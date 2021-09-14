@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
 public class ItemController {
 
-    // Get all the items from DB.
 
     @Autowired
     ItemService itemService;
